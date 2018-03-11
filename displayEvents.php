@@ -2,13 +2,13 @@ Connected successfully<!DOCTYPE HTML>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>WDV341 Intro PHP  - Display Events Example</title>
+    <title>Display Events Example</title>
     <style>
 		.eventBlock{
 			width:500px;
 			margin-left:auto;
 			margin-right:auto;
-			background-color:#F3D6E4;
+			background-color:#CDB8DC;
 			padding:10px;
 			border-radius: 25px;	
 			border-style: solid;			
@@ -18,14 +18,14 @@ Connected successfully<!DOCTYPE HTML>
 			width:700px;
 			margin-left:auto;
 			margin-right:auto;
-			background-color:#F3D6E4;
+			background-color:#BB8CDD;
 			padding:10px;
 			border-radius: 25px;	
 			border-style: solid;			
 		}		
 		
 		body{
-			background-color:#898E8C;
+			background-color:#9788A2;
 		}
 		
 		.displayEvent{
@@ -45,9 +45,11 @@ Connected successfully<!DOCTYPE HTML>
 			padding: 15px 30px;
 			display:block;			
 			margin:0 auto;
-			background-color: #F3D6E4;
+			background-color: #4B325D;
 			border: solid;
-			border-radius: 25px;			
+			border-radius: 25px;	
+			font-weight: bold;
+			color: white;
 		}
 	</style>
 </head>
@@ -55,27 +57,27 @@ Connected successfully<!DOCTYPE HTML>
 <body>
 	<div class="titleBlock">
     <h1 class="style">WDV341 Intro PHP</h1>
-    <h2 class="style">Example Code - Display Events as formatted output blocks</h2>   
-    <h3 class="style">There are 11 events available today.</h3>
+    <h2 class="style">Display events in blocks</h2>   
+    <h3 class="style">There are 10 events available today.</h3>
 	</div>
 <br>
-	<a href="https://github.com/noahotoole/wdv341/blob/master/displayEvents.php"><button>View PHP</button></a>	
+	<a href="https://github.com/kmsohn/myPHP/blob/master/displayEvents.php"><button>View PHP</button></a>	
 	
 	
 
 	<p>
         <div class="eventBlock">	
             <div>
-            	<span class="displayEvent">Event: PHP Class</span>
+            	<span class="displayEvent">Event: Learn Gardening Skills</span>
             	<span class="displayDescription">Description: </span>
             </div>
             <div>
             	Presenter:             </div>
             <div>
-            	<span class="displayTime">Time: 12:00 AM</span>
+            	<span class="displayTime">Time: 2:00 PM</span>
             </div>
             <div>
-            	<span class="displayDate">Date: 00-00-0000</span>
+            	<span class="displayDate">Date: 03-08-2018</span>
             </div>
         </div>
     </p>
@@ -84,16 +86,16 @@ Connected successfully<!DOCTYPE HTML>
 	<p>
         <div class="eventBlock">	
             <div>
-            	<span class="displayEvent">Event: Javascript Class</span>
+            	<span class="displayEvent">Event: How to plant a Perenial Garden</span>
             	<span class="displayDescription">Description: </span>
             </div>
             <div>
             	Presenter:             </div>
             <div>
-            	<span class="displayTime">Time: 12:00 AM</span>
+            	<span class="displayTime">Time: 1:00 PM</span>
             </div>
             <div>
-            	<span class="displayDate">Date: 00-00-0000</span>
+            	<span class="displayDate">Date: 03-08-2018</span>
             </div>
         </div>
     </p>
@@ -102,8 +104,8 @@ Connected successfully<!DOCTYPE HTML>
 	<p>
         <div class="eventBlock">	
             <div>
-            	<span class="displayEvent">Event: HTML Class</span>
-            	<span class="displayDescription">Description: XHTML, HTML and CSS</span>
+            	<span class="displayEvent">Event: Des Moines Home + Outdoor Living Show</span>
+            	<span class="displayDescription">Description: Get inspired by the Lastest Trend</span>
             </div>
             <div>
             	Presenter:             </div>
@@ -111,7 +113,7 @@ Connected successfully<!DOCTYPE HTML>
             	<span class="displayTime">Time: 1:30 PM</span>
             </div>
             <div>
-            	<span class="displayDate">Date: 09-18-2014</span>
+            	<span class="displayDate">Date: 03-11-2018</span>
             </div>
         </div>
     </p>
@@ -120,8 +122,44 @@ Connected successfully<!DOCTYPE HTML>
 	<p>
         <div class="eventBlock">	
             <div>
-            	<span class="displayEvent">Event: HTML Class</span>
-            	<span class="displayDescription">Description: XHTML, HTML and CSS</span>
+            	<span class="displayEvent">Event: Des Moines Home + Outdoor Living Show</span>
+            	<span class="displayDescription">Description: Get inspired by the Lastest Trends</span>
+            </div>
+            <div>
+            	Presenter:             </div>
+            <div>
+            	<span class="displayTime">Time: 12:00 PM</span>
+            </div>
+            <div>
+            	<span class="displayDate">Date: 03-09-2018</span>
+            </div>
+        </div>
+    </p>
+	
+
+	<p>
+        <div class="eventBlock">	
+            <div>
+            	<span class="displayEvent">Event: Des Moines Home + Outdoor Living Show</span>
+            	<span class="displayDescription">Description: Get inspired by the Lastest Trend</span>
+            </div>
+            <div>
+            	Presenter:             </div>
+            <div>
+            	<span class="displayTime">Time: 2:00 PM</span>
+            </div>
+            <div>
+            	<span class="displayDate">Date: 03-05-2018</span>
+            </div>
+        </div>
+    </p>
+	
+
+	<p>
+        <div class="eventBlock">	
+            <div>
+            	<span class="displayEvent">Event: Des Moines Home + Outdoor Living Show</span>
+            	<span class="displayDescription">Description: Get inspired by the Lastest Trend</span>
             </div>
             <div>
             	Presenter:             </div>
@@ -129,7 +167,7 @@ Connected successfully<!DOCTYPE HTML>
             	<span class="displayTime">Time: 12:00 AM</span>
             </div>
             <div>
-            	<span class="displayDate">Date: 00-00-0000</span>
+            	<span class="displayDate">Date: 03-08-2018</span>
             </div>
         </div>
     </p>
@@ -138,34 +176,16 @@ Connected successfully<!DOCTYPE HTML>
 	<p>
         <div class="eventBlock">	
             <div>
-            	<span class="displayEvent">Event: HTML Class</span>
-            	<span class="displayDescription">Description: XHTML, HTML and CSS</span>
+            	<span class="displayEvent">Event: Des Moines Home + Outdoor Living Show</span>
+            	<span class="displayDescription">Description: Get inspired by the Lastest Trend</span>
             </div>
             <div>
             	Presenter:             </div>
             <div>
-            	<span class="displayTime">Time: 12:00 AM</span>
+            	<span class="displayTime">Time: 3:00 PM</span>
             </div>
             <div>
-            	<span class="displayDate">Date: 09-18-2014</span>
-            </div>
-        </div>
-    </p>
-	
-
-	<p>
-        <div class="eventBlock">	
-            <div>
-            	<span class="displayEvent">Event: HTML Class</span>
-            	<span class="displayDescription">Description: XHTML, HTML and CSS</span>
-            </div>
-            <div>
-            	Presenter:             </div>
-            <div>
-            	<span class="displayTime">Time: 12:00 AM</span>
-            </div>
-            <div>
-            	<span class="displayDate">Date: 09-18-2014</span>
+            	<span class="displayDate">Date: 03-08-2018</span>
             </div>
         </div>
     </p>
@@ -174,26 +194,8 @@ Connected successfully<!DOCTYPE HTML>
 	<p>
         <div class="eventBlock">	
             <div>
-            	<span class="displayEvent">Event: HTML Class</span>
-            	<span class="displayDescription">Description: XHTML, HTML and CSS</span>
-            </div>
-            <div>
-            	Presenter:             </div>
-            <div>
-            	<span class="displayTime">Time: 12:00 AM</span>
-            </div>
-            <div>
-            	<span class="displayDate">Date: 00-00-0000</span>
-            </div>
-        </div>
-    </p>
-	
-
-	<p>
-        <div class="eventBlock">	
-            <div>
-            	<span class="displayEvent">Event: HTML Class</span>
-            	<span class="displayDescription">Description: XHTML, HTML and CSS</span>
+            	<span class="displayEvent">Event: Des Moines Home + Outdoor Living Show</span>
+            	<span class="displayDescription">Description: Get inspired by the Lastest Trend</span>
             </div>
             <div>
             	Presenter:             </div>
@@ -201,7 +203,7 @@ Connected successfully<!DOCTYPE HTML>
             	<span class="displayTime">Time: 1:30 PM</span>
             </div>
             <div>
-            	<span class="displayDate">Date: 09-18-2014</span>
+            	<span class="displayDate">Date: 03-08-2018</span>
             </div>
         </div>
     </p>
@@ -210,8 +212,8 @@ Connected successfully<!DOCTYPE HTML>
 	<p>
         <div class="eventBlock">	
             <div>
-            	<span class="displayEvent">Event: HTML Class</span>
-            	<span class="displayDescription">Description: XHTML, HTML and CSS</span>
+            	<span class="displayEvent">Event: Des Moines Home + Outdoor Living Show</span>
+            	<span class="displayDescription">Description: Get inspired by the Lastest Trend</span>
             </div>
             <div>
             	Presenter:             </div>
@@ -219,7 +221,7 @@ Connected successfully<!DOCTYPE HTML>
             	<span class="displayTime">Time: 1:30 PM</span>
             </div>
             <div>
-            	<span class="displayDate">Date: 09-18-2014</span>
+            	<span class="displayDate">Date: 03-08-2018</span>
             </div>
         </div>
     </p>
@@ -228,8 +230,8 @@ Connected successfully<!DOCTYPE HTML>
 	<p>
         <div class="eventBlock">	
             <div>
-            	<span class="displayEvent">Event: HTML Class</span>
-            	<span class="displayDescription">Description: XHTML, HTML and CSS</span>
+            	<span class="displayEvent">Event: Des Moines Home + Outdoor Living Show</span>
+            	<span class="displayDescription">Description: Get inspired by the Lastest Trend</span>
             </div>
             <div>
             	Presenter:             </div>
@@ -237,28 +239,14 @@ Connected successfully<!DOCTYPE HTML>
             	<span class="displayTime">Time: 1:30 PM</span>
             </div>
             <div>
-            	<span class="displayDate">Date: 09-18-2014</span>
+            	<span class="displayDate">Date: 03-08-2018</span>
+            	<span class="displayDate">Date: 03-08-2018</span>
             </div>
         </div>
     </p>
 	
 
-	<p>
-        <div class="eventBlock">	
-            <div>
-            	<span class="displayEvent">Event: HTML Class</span>
-            	<span class="displayDescription">Description: XHTML, HTML and CSS</span>
-            </div>
-            <div>
-            	Presenter:             </div>
-            <div>
-            	<span class="displayTime">Time: 1:30 PM</span>
-            </div>
-            <div>
-            	<span class="displayDate">Date: 09-18-2014</span>
-            </div>
-        </div>
-    </p>
+
 </div>	
 </body>
 </html>
