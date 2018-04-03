@@ -2,7 +2,7 @@
 $serverName = "localhost";
 $username = "root";
 $password = "";
-$database = "wdv341_event";
+$database = "php_class";
 
 try {
     $conn = new PDO("mysql:host=$serverName;dbname=$database", $username, $password);
@@ -11,7 +11,7 @@ try {
     echo "Connected successfully"; 
     
 
- $stmt = $conn->prepare("INSERT INTO wdv341_event (event_name, event_date, event_time)
+ $stmt = $conn->prepare("INSERT INTO selectevent (event_name, event_date, event_time)
     VALUES (:eventname, :eventday, :eventtime)"); //placeholders-connection points
     $stmt->bindParam(':eventname', $eventName);
 	 //$stmt->bindParam(':eventday', $eventDay);
