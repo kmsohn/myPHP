@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+	<head>
+		
+		 <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+		<script src="jquery-3.3.1.min.js"></script>
+		
+
+		
+	<title>Hair Styles</title>
+	
+	<script>	
+			
+		$(document).ready(function() {
+			$.get("AjaxTeam.php"); // Creates JSON objects
+			
+			var weddingStylesArray = {"":"Select an Item","flowerCrowned": "Crowned Flower","pinnedCurls": "Pinned Curls","sideSweep": "Side Sweep Chignon"};
+			
+			var hairStylesArray = {"":"Select an Item","shortBob": "Short Bob", "fingerWaves": "Finger Waves", "neonHue": "Hair Color"};
+			$("[type=radio]").click(function() {
+				var selectedRadioBtn = $("input:checked").val();
+				
+				if(selectedRadioBtn == "weddingStyles")
+				{
+					itemArray = weddingStylesArray;
+				}
+				else
+				{
+					itemArray = hairStylesArray;
+				}
+				
+				var select = $('#select');
+				$('option', select).remove();
+				$.each(itemArray, function (value, text) {
+					var option = new Option(text, value);
+					select.append($(option));
+				});
+			});
+			
+			$("#select").change(function() {
+				$selectedChoice = $(this).val(); // Gets selected value
+				if($selectedChoice != "")
+				{
+					$.getJSON($selectedChoice + ".json", function(data) { //Gets data from JSON files
+						$("#description").html(data.description);
+						$("#price").html(data.price);
+						$("#image").html("<p><img src='" + data.image + "' ></p>");
+					})
+				}
+				else
+				{
+					$("#description").html("");
+					$("#price").html("");
+					$("#image").html("");
+				}
+			});
+			
+		});
+	</script>
+		
+		
+	<style type="text/css">
+	.bold {
+		font-weight: bold;
+	}
+	</style>
+	</head>
+
+	<body>
+			
+		<h1>Jessy James Hair Salon</h1>
+		<h2>Select your styling choice</h2>
+		<h3></h3>
+		<p>&nbsp;</p>
+		<form name="form1" method="post" action="">
+		  <h2>Hairstyle Examples</h2>
+			 <label for="weddingStyle">Wedding Styles</label>
+		  <input type="radio" name="radio" id="weddingStyles" value="weddingStyles" />
+			
+		  <label for="hairStyles">Hair Styles</label>
+		  <input type="radio" name="radio" id="hairStyles" value="hairStyles" />
+			<p><h3>Please Select your style: </h3>
+			<label>
+			  <h5><select name="select" id="select">
+				<option value="">Select a style</option>
+				<option value="shortBob">Short Bob</option>
+				<option value="neonHue">Neon Hues Color</option>
+				  
+				<option value="pinnedCurls">Pinned Curls</option>
+				<option value="flowerCrowned">Flower Crowned Updo</option>
+				<option value="fingerwaves">Finger Waves</option>
+				<option value="sideSweep">SideSweep</option>
+				<option value="permStyle">PermStyle</option>
+				
+				  </select></h5>
+			</label>
+			  
+		  </p>
+		  <p>Description: <span id="description"></span></p>
+		  <p>Price: <span id="price"></span></p>
+		  <p>Style Example: <span id="image"></span></p>
+		  <p>
+			
+		  </p>
+		</form>
+		<p class="bold">Choose your styling preference or call us for additional services.</p>
+		<p></p>
+	
+	</body>
+</html>
